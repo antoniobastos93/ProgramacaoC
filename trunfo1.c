@@ -22,7 +22,7 @@ int p_turismo2;
 
 //Declarando variáveis para comparação:
 //int cPop, cArea, cPib, cPon, cDen, cPib, cSup
-int resultado;
+//int resultado;
 float superpoder1, superpoder2;
 
 //Solicitando os dados da Carta 1:
@@ -97,28 +97,19 @@ printf("Os dados da Carta 2 são: \n Código da Carta: %s\n Estado: %s\n Cidade:
       c_carta2, estado2, cidade2, populacao2, area2, pib2, p_turismo2, densi2, pibperca2);
 
 //Comparação:
-      resultado = populacao1 > populacao2;
-      printf("População: %d\n", resultado);
 
-      resultado = area1 > area2;
-      printf("Área: %d\n", resultado);
+      if(populacao1 > populacao2){
+            printf("A carta 1 venceu! População: %d\n", populacao1);
+      }else{
+            printf("A carta 2 venceu! População: %d\n", populacao2);
+      }
 
-      resultado = pib1 > pib2;
-      printf("PIB: %d\n", resultado);
-
-      resultado = p_turismo1 > p_turismo2;
-      printf("Pontos turísticos: %d\n", resultado);
-
-      resultado = densi1 < densi2;
-      printf("Densidade: %d\n", resultado);
-
-      resultado = pibperca1 > pibperca2;
-      printf("PIB Per Capita: %d\n", resultado);
-
-      resultado = superpoder1 > superpoder2;
-      printf("Superpoder: %d\n", resultado);
-
-
+      if(area1 > area2){
+            printf("A carta 1 venceu! Área: %f\n", area1);
+      }else{
+            printf("A carta 2 venceu! Área: %f\n", area2);
+      }
+  
       return 0;
 
 }
